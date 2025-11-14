@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Momo+Trust+Display&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Stack+Sans+Text:wght@200..700&display=swap');
+
+:root {
+    --cor-padrao: rgb(255, 255, 255);
+    --cor-primaria: rgb(238, 208, 12);
+    --cor-secundaria: rgb(0, 0, 0);
+    --font-primaria: 'Montserrat';
+    --font-secundaria: 'Open Sans';   
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,4 +19,175 @@
 body, html {
     width: 100%;
     height: 100%;
+}
+
+/* NAVEGAÇÃO */
+
+.nav {
+    /* position: fixed; */
+    z-index: 99;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: var(--font-primaria);
+    margin: 1.8rem 1.8rem 0rem 1.8rem;
+    /* background-color: rgba(202, 13, 13, 0.534); */
+}
+
+.nav-bar {
+    display: flex;
+    gap: 1rem;
+}
+.nav-bar  a {
+    text-decoration: none;
+    color: var(--cor-secundaria);
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    transform: scale(1.1);
+    color: var(--cor-primaria);
+}
+
+/*  HERO SECTION */
+
+#hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    z-index: -1;
+    /* gap: 200px; */
+}
+
+#hero::before {
+    content: "";
+    background: url(/src/assets/aracaju.jpg) no-repeat center center/cover;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    opacity: 0.3;
+    z-index: 1;
+}
+
+/* TEXTOS + BOTOES */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.2rem;
+    z-index: 2;
+    width: 30rem;
+    color: var(--cor-padrao);
+}
+
+h1 {
+    font-family: var(--font-primaria);
+}
+
+h1 ~ p {
+    font-family: var(--font-secundaria);
+}
+
+/* CARDS FOTOS */
+
+.preview {
+    z-index: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    border-radius: 10px 0px 10px 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card:hover::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0,0,0,0.7) 100%);
+    z-index: 1;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card h1 {
+    position: absolute;
+    top: 0.8rem;
+    left: 50%;
+    color: black;
+    font-size: 0.5rem;
+    letter-spacing: 0.03rem;
+    text-align: center;
+    z-index: 2;
+    transform: translateX(-50%) scale(1.5);
+    transition: top 0.35s ease, transform 0.35s ease, color 0.25s ease;
+}
+
+.card:hover h1 {
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.65);
+    color: var(--cor-padrao); 
+}
+
+.faixa {
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (max-width: 1000px) {
+    
 }

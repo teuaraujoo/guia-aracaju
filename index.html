@@ -8,58 +8,85 @@
     <meta name="robots" content="index, follow"/>  
     <meta name="author" content="Mateus Araujo"/>
     <link rel="shortcut icon" type="images/png" href="./assets/logo.png">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="/src/styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
     <!-- Font Aewsome -->
     <title>Guia Aracaju - Turismo</title>
 </head>
 <body>
     <main>
-        <header>
+        <header class="nav">
             <h3>GUIA ARACAJU</h3>
-            <nav>
+            <nav class="nav-bar">
                 <a href="#hero">Inicío</a>
                 <a href="#pontos">Turismo</a>
                 <a href="#contact">Contato</a>
+                <!-- <input type="search" name="search-bar" id="searchbar" placeholder="Pesquise Aqui"> -->
             </nav>
         </header>
             <section id="hero">
-                <div class="content">
-                    <h1>Aracaju - Sergipe</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero repellendus, veritatis molestiae dolores porro, error sequi est veniam fugiat recusandae placeat eos assumenda voluptatum eum exercitationem. Numquam, veniam quos!</p>
-                    <a href="#pontos"><button>Turismo</button></a>
-                </div>
+                    <div class="content">
+                        <h1>Aracaju - Sergipe</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui vero repellendus, veritatis molestiae dolores porro, error sequi est veniam fugiat recusandae placeat eos assumenda voluptatum eum exercitationem. Numquam, veniam quos!</p>
+                        <a href="#pontos"><button>Entre em Contato</button></a>
+                    </div>
+                    <div class="preview">
+                        <a href="#orla">
+                            <div class="card" style="background-image: url('/src/assets/orla.webp');">
+                                <h1>Orla da Atalaia</h1>
+                            </div>
+                        </a>
+                        <a href="#orlapor">
+                            <div class="card" style="background-image: url('/src/assets/orlaprodosol.webp');">
+                                <h1>Orla Pôr do Sol</h1>
+                            </div>
+                        </a>
+                        <a href="#ocean">
+                            <div class="card" style="background-image: url('/src/assets/oceanario.webp');">
+                                <h1>Oceanário</h1>
+                            </div>
+                        </a>
+                        <a href="#museu">
+                            <div class="card" style="background-image: url('/src/assets/museu.webp');">
+                                <h1>Museu da Gente Sergipana</h1>
+                            </div>
+                        </a>
+                    </div>
             </section>
 
+            <div class="faixa">
+                FAIXA COM NOMES/EXPRESSÕES CARACTERISTICAS DE ARACAJU
+            </div>
+
             <section id="pontos">
-                <div class="lugar">
+                <div id="orla">
                     <h1></h1>
-                    <img src="./assets/orla.webp" alt="Orla da Atalaia">
+                    <img src="/src/assets/orla.webp" alt="Orla da Atalaia">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
-                <div class="lugar">
+                <div id="passarela">
                     <h1></h1>
-                    <img src="./assets/passarela.webp" alt="Passarela do Crangueijo">
+                    <img src="/src/assets/passarela.webp" alt="Passarela do Crangueijo">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
-                <div class="lugar">
+                <div id="ocean">
                     <h1></h1>
-                    <img src="./assets/oceanario.webp" alt="Occeanário">
+                    <img src="/src/assets/oceanario.webp" alt="Oceanário">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
-                <div class="lugar">
+                <div id="museu">
                     <h1></h1>
-                    <img src="./assets/museu.webp" alt="Museu da Gente Sergipana">
+                    <img src="/src/assets/museu.webp" alt="Museu da Gente Sergipana">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
-                <div class="lugar">
+                <div id="largo">
                     <h1></h1>
-                    <img src="./assets/Largo.webp" alt="Largo da Gente Sergipana">
+                    <img src="/src/assets/Largo.webp" alt="Largo da Gente Sergipana">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
-                <div class="lugar">
+                <div id="orlapor">
                     <h1></h1>
-                    <img src="./assets/orlaprodosol.webp" alt="Orla Pôr do Sol">
+                    <img src="/src/assets/orlaprodosol.webp" alt="Orla Pôr do Sol">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi odio veritatis id deleniti consectetur quisquam vitae illum debitis voluptatum, quasi voluptate laudantium aperiam velit optio, laboriosam dolores eius nam excepturi.</p>
                 </div>
             </section>
@@ -78,6 +105,6 @@
                 </div>
             </section>
     </main>
-    <script href="./script/script.js"></script>
+    <script href="/src/script/script.js"></script>
 </body>
 </html>
