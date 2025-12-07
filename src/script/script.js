@@ -14,3 +14,19 @@ const pontos = gsap.utils.toArray('#pontos > div');
             }
         });
     });
+
+    const cards = gsap.utils.toArray('.preview');
+
+    cards.forEach(ponto => {
+        gsap.from(ponto, {
+            opacity: 0,
+            y: 100, 
+            duration: 0.8,
+            ease: 'power2.out',
+            scrollTrigger: {
+                trigger: ponto,
+                start: 'top 85%', 
+                toggleActions: 'play reset play reset', 
+            }
+        });
+    });
