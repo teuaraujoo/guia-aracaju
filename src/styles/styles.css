@@ -9,6 +9,7 @@
     --font-primaria: 'Montserrat';
     --font-secundaria: 'Open Sans'; 
     --fade-in: normal fade-in 2s;  
+    --espacamento1: 0.5rem; 
 }
 
 * {
@@ -102,7 +103,7 @@ body, html {
 .content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: var(--espacamento1);
     z-index: 2;
     width: 28rem;
     color: var(--cor-padrao);
@@ -238,7 +239,7 @@ a {
     left: 50%;
     color: black;
     font-family: var(--font-primaria);
-    font-size: 0.5rem;
+    font-size: var(--espacamento1);
     letter-spacing: 0.03rem;
     text-align: center;
     z-index: 2;
@@ -334,7 +335,7 @@ a {
 
 .callout h1 {
     font-size: 3rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--espacamento1);
 }
 
 .callout a {
@@ -359,7 +360,7 @@ a {
 }
 
 .callout i {
-    margin-left: 0.5rem;
+    margin-left: var(--espacamento1);
 }
 
 .socials {
@@ -375,7 +376,7 @@ a {
 
 .socials h6 {
     font-size: 1.1rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: var(--espacamento1);
 }
 
 .socials-btn {
